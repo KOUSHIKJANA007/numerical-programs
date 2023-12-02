@@ -3,7 +3,7 @@
 
 void main()
 {
-    float x[100], y[100], xp, yp = 0, p;
+    float x[100], y[100], xp, sum = 0, p;
     int i, j, n;
    
     printf("Enter number of data: ");
@@ -34,8 +34,8 @@ void main()
                 p = p * (xp - x[j]) / (x[i] - x[j]);
             }
         }
-        yp = yp + p * y[i];
+        sum = sum + p * y[i];
     }
-    printf("Interpolated value at %.3f is %.3f.", xp, yp);
+    printf("Interpolated value at %.3f is %.3f.", xp, sum);
   
 }
