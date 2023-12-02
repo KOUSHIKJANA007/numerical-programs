@@ -1,0 +1,1 @@
+#define F(x) ((x * log(x)) - 1.2)
